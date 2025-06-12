@@ -18,15 +18,15 @@
 
 ### Required
 
-- Read through the code changes and check that the docs, README and existing tests have been updated
-- Check that the code is readable and easy to understand. This includes: comments, variable names, method names and line length
-- Check that the code meets the requirements specified in the PR description and/or linked ClickUp ticket
+- Read through the code changes and check that the docs, README and existing tests have been updated.
+- Check that the code is readable and easy to understand. This includes: comments, variable names, method names and line length.
+- Check that the code meets the requirements specified in the PR description and/or linked ClickUp ticket.
 
-### Important
+### Recommended Best Practices
 
-- Verify that all new code is covered by a corresponding test
-- No file paths are hardcoded in the main body of the file. Try using parameter file or input arguments instead
+- Verify that all new code is covered by corresponding tests.
+- No file paths are hardcoded in the main body of the file. Try using parameter file or input arguments instead.
 
-### Nice To Have
+### Going the Extra Mile
 
-- Checkout the code locally and try running the new code yourself reproducibility and that is runs as you expect
+- Checkout the code locally, try running the new code yourself and verify that it runs as you expect.
