@@ -1,0 +1,25 @@
+name: Notify Slack on New Discussion
+
+on:
+  discussion:
+    types: [created]
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post a message in a channel
+        uses: slackapi/slack-github-action@v2.1.0
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            blocks:
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: ":speech_balloon: *New Github Discussion Created!*"
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: "*Title:* ${{ github.event.discussion.title }}\n*URL:* ${{ github.event.discussion.html_url }}"
