@@ -15,6 +15,10 @@
 
 ## Review Instructions
 
+[A useful general guide on what to look for in code review](https://google.github.io/eng-practices/review/reviewer/looking-for.html).
+
+Below are Fathom's specific expectations.
+
 ### Required
 
 - Read through the code changes and check that the docs, README and existing tests have been updated.
